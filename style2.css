@@ -1,0 +1,68 @@
+:root{
+    --main-color :#d3c8c4;
+}
+
+.backgrondblure{
+/*     background: [background-image] [background-position] / [background-size] [background-repeat] [background-attachment] [background-origin] [background-clip] [background-color];
+ */
+    background: url(./assets/imges/work.jpg)  ;
+    background-position: 50%,50%;
+    background-repeat: no-repeat,repeat;
+    background-size: cover ; 
+    z-index: 5;
+    height: 100vh;
+    
+}
+.center-itemes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.formData {
+   width: 500px;
+   margin: 0;
+    height: 600px;
+    border-radius: 5%;
+   background-color: rgba(0,0,0,.7);
+}
+.formData  .title-page{
+    text-align: center;
+    padding: 20px;
+    color: var(--main-color);
+    margin-top: 30px;
+}
+.formData  .form-group{
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+.formData  .form-group label{
+    color: var(--main-color);
+}
+.formData .create-new-account{
+color: rgb(174 207 239 / 75%) !important;
+font-size: 15px;
+padding: 20px;
+}
+
+.formData a{
+    text-decoration: none;
+}
+
+.formData .error{
+    color: #dc3545 !important;
+    font-size: 16px;
+    font-weight: 400;
+    transition:all 5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.formData .errorInput{
+    background-color:#ff7d7d !important;
+    border: none !important;
+    transform: scale(1.1);
+    transition:all 5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.formData .errorInput:focus{
+    border-color: #ff7d7d !important;
+}

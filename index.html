@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style2.css">
+  </head>
+  <body>
+    <div class="backgrondblure">
+    <div class="container center-itemes">
+          <form class="formData" name="formData" onsubmit="return validationSign()">
+            <h2 class="title-page">Sign In</h2>
+              <div class="form-group row">
+                <label for="inputEmail" class="col-sm-3 col-form-label">Email</label>
+                <div class="col-sm-9">
+                  <input type="email" class="form-control" name="inputEmail" id="inputEmail" placeholder="Email">
+                  <small id="erroremail"  class="form-text text-muted"></small>
+  
+                </div>
+              </div>
+            <div class="form-group row">
+              <label for="inputPassowrd" class="col-sm-3 col-form-label">Password</label>
+              <div class="col-sm-9">
+                <input type="password" class="form-control" name="inputPassowrd" id="inputPassowrd" placeholder="Password">
+                <small id="errorinputPassowrd" class="form-text text-muted"></small>
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <div class="col-sm-10 mb-3">
+                <button type="submit" class="btn btn-primary">Sign In</button>
+              </div>
+            </div>
+            <small class="form-text text-muted  create-new-account"> I don't Have account
+              <a href="./register.html" class="">Create New Account!</a>
+            
+            </small>
+          </form>
+
+        </div>
+
+    </div>
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="task20.js"></script>
+  </body>
+</html>
