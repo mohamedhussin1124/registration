@@ -10,9 +10,17 @@
     background-repeat: no-repeat,repeat;
     background-size: cover ; 
     z-index: 5;
-    height: 100vh;
-    
+    height: 120vh;
+    position: relative;
 }
+
+.backgrondblure .mode{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(240, 233, 233);
+    padding: 10px;
+}
+
 .center-itemes{
     display: flex;
     justify-content: center;
@@ -65,4 +73,21 @@ padding: 20px;
 }
 .formData .errorInput:focus{
     border-color: #ff7d7d !important;
+}
+
+
+.light-mode .formData{
+    background-color:rgb(159 152 152 / 70%);
+}
+.light-mode .formData .title-page {
+    color:rgb(32, 31, 31);
+}
+.light-mode .formData .form-group label {
+    color:rgb(32, 31, 31);
+}
+.light-mode .formData .create-new-account{
+    color:rgb(32, 31, 31) !important;
+}
+.light-mode .formData .create-new-account a{
+    color: blue;
 }
