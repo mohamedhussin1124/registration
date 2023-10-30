@@ -16,7 +16,7 @@ const errorinputRePassowrd = document.getElementById("errorinputRePassowrd")
 // Validate password
 const passw = /^[A-Za-z]\w{7,14}$/;
 
-
+const mode = document.getElementById("chaneMode")
 
 
 
@@ -107,8 +107,8 @@ const validation = () => {
         inputRePassowrd.classList.remove("errorInput")
     }
 
-    setlocalStorages("Email" ,inputEmail.value )
-    setlocalStorages("Password" ,inputPassowrd.value )
+    setlocalStorages("Email", inputEmail.value)
+    setlocalStorages("Password", inputPassowrd.value)
     document.location.href = '/'
     return true
 }
@@ -117,43 +117,43 @@ const validation = () => {
 
 
 
-const  setlocalStorages = (name,data)=> {
-    let stor =localStorage.setItem(name, data)
+const setlocalStorages = (name, data) => {
+    let stor = localStorage.setItem(name, data)
 }
 
 
 /* Valdation Sign in */
 
-const validationSign = (e)=>{
+const validationSign = (e) => {
 
     /* Get Data From Storage Browser to Validation */
     const getEmailFromStorage = getlocalStorages("Email")
     const getPasswordFromStorage = getlocalStorages("Password")
 
 
-    if(inputEmail.value !== getEmailFromStorage) {
+    if (inputEmail.value !== getEmailFromStorage) {
         erroremail.innerHTML = "Your Pssword Is valid Please set Your Email"
         erroremail.classList.add("error")
         inputEmail.classList.add("errorInput")
         return false
-    }else{
+    } else {
         erroremail.innerHTML = ""
         erroremail.classList.remove("error")
         inputEmail.classList.remove("errorInput")
     }
 
 
-    if(inputPassowrd.value !== getPasswordFromStorage) {
+    if (inputPassowrd.value !== getPasswordFromStorage) {
         errorinputPassowrd.innerHTML = "Your Pssword Is valid Please set Your Password"
         errorinputPassowrd.classList.add("error")
         inputPassowrd.classList.add("errorInput")
         return false
-    }else{
+    } else {
         errorinputPassowrd.innerHTML = ""
         errorinputPassowrd.classList.remove("error")
         inputPassowrd.classList.remove("errorInput")
     }
-    
+
     return true
 }
 
@@ -163,3 +163,16 @@ function getlocalStorages(nameStorage) {
     let stor = localStorage.getItem(nameStorage)
     return stor
 }
+
+
+/* light Mode toogle*/
+
+mode.addEventListener("click", (ev) => {
+    const el = document.getElementsByClassName("center-itemes")
+    el[0].classList.toggle("light-mode")
+    el[0].parentElement.classList.toggle("backgroundLight")
+    ev.target.children[0].classList.toggle("fa-moon")
+
+
+
+})
