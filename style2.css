@@ -5,7 +5,7 @@
 .backgrondblure{
 /*     background: [background-image] [background-position] / [background-size] [background-repeat] [background-attachment] [background-origin] [background-clip] [background-color];
  */
-    background: url(./assets/imges/work.jpg)  ;
+    background: linear-gradient(85deg , rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(./assets/imges/work.jpg)  ;
     background-position: 50%,50%;
     background-repeat: no-repeat,repeat;
     background-size: cover ; 
@@ -13,7 +13,12 @@
     height: 120vh;
     position: relative;
 }
-
+.backgroundLight{
+    background: linear-gradient(85deg , rgba(0,0,0,0.2), rgba(0,0,0,-0.3)), url(./assets/imges/work.jpg) !important;
+    background-position: 50% !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important; 
+}
 .backgrondblure .mode{
     text-align: center;
     font-size: 30px;
@@ -75,9 +80,12 @@ padding: 20px;
     border-color: #ff7d7d !important;
 }
 
-
+.mode{
+    cursor: pointer;
+}
 .light-mode .formData{
-    background-color:rgb(159 152 152 / 70%);
+    background-color: rgb(255 255 255 / 70%);
+
 }
 .light-mode .formData .title-page {
     color:rgb(32, 31, 31);
