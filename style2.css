@@ -19,12 +19,7 @@
     background-repeat: no-repeat !important;
     background-size: cover !important; 
 }
-.backgrondblure .mode{
-    text-align: center;
-    font-size: 30px;
-    color: rgb(240, 233, 233);
-    padding: 10px;
-}
+
 
 .center-itemes{
     display: flex;
@@ -32,6 +27,8 @@
     align-items: center;
     height: 100vh;
 }
+
+/* form style */
 .formData {
    width: 500px;
    margin: 0;
@@ -63,6 +60,8 @@ padding: 20px;
     text-decoration: none;
 }
 
+
+/* if error in filed */
 .formData .error{
     color: #dc3545 !important;
     font-size: 16px;
@@ -80,9 +79,16 @@ padding: 20px;
     border-color: #ff7d7d !important;
 }
 
-.mode{
+/* mode icon start here */
+.backgrondblure #chaneMode{
+    text-align: center;
+    font-size: 30px;
+    color: #000;
+    padding: 10px;
     cursor: pointer;
 }
+
+/* light mode */
 .light-mode .formData{
     background-color: rgb(255 255 255 / 70%);
 
@@ -98,4 +104,7 @@ padding: 20px;
 }
 .light-mode .formData .create-new-account a{
     color: blue;
+}
+.light-mode .form-control{
+    background-color: #b9a0a075 !important;
 }
